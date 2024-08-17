@@ -40,8 +40,8 @@ jobs:
           ssh-keyscan -H $HOST >> ~/.ssh/known_hosts
           ssh root@$HOST << 'EOF'
             set -e
-            cd /root/CRM_BACKEND/fsp-crm-backend
+            cd /root/Damir/social-media
             git pull
-            sudo systemctl restart cr_m.service
-            sudo systemctl status cr_m.service
+            sudo systemctl restart damir_sm.service
+            sudo systemctl status damir_sm.service
           EOF
